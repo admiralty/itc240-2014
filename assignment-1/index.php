@@ -1,3 +1,3 @@
 <!doctype html>
 <html>
-Hello world! 
+Greetings earth people!
