@@ -1,12 +1,12 @@
 <?php
-$page_title = "Index page";
+$page_title = "Earth people";
 include("header.inc");
 ?>
 
-Earth people. New York and California. Earth people. I was born on 
+New York and California. Earth people. I was born on 
 Jupiter.
 
 
-//<!doctype html>
+<!----<!doctype html>
 <html>
-Greetings earth people!
+Greetings earth people!----
