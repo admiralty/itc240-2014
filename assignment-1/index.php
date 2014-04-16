@@ -3,14 +3,14 @@ $page_title = "Earth people!";
 include("header.php");
 ?>
 
-New York and California. Earth people! I was born on Jupiter.<br><br> 
-Art 
-avenger, let's start the adventure. Super-sleuth, a new race. Mad 
-creator, savage nature.<br><br> 
-World Wide Web, the ebb and flow. Light years from watchful eyes while 
-my thoughts provide objectives.<br><br> Asteroid surfing, drift by a 
+Peace on Earth. <br><br> 
+Avengers, let's start the game. Superhero, a new breed. 
+Masters of the universe.<br><br> 
+World Wide Web, hello worlds. Years, light years from the nearest sun. 
+My thoughts turn to alternate universes.<br><br> Asteroid surfing, 
+drifting, surfing on a rocket, pass by a 
 star, 
-absorb it, and store it.
+absorb it, and sanitize it.
 
 <?php
 include("footer.php");
