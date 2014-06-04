@@ -16,7 +16,7 @@
     
         
         <form method="POST" action="update.php">
-            <input placeholder="Add an activity" name="kind">
+            <input placeholder="Add an activity" name="activity">
             <input placeholder="Add calories burned" name="calories">
             <input type="submit" value="<< Submit Entries">
         </form>
@@ -28,36 +28,20 @@
 include("password.php");
 $mysql = new mysqli("localhost", "cmoren03", $mysql_password, "cmoren03");
 
-$column = 'date';
+$column = 'accomplished_on';
 if (isset($_REQUEST["sort"])){
     $column = $_REQUEST["sort"];
 }
 
-$whitelist = ["date" => true, "activity" => true, "calories" => true, "id" => true];
+$whitelist = ["accomplished_on" => true, "activity" => true, "calories" => true, "id" => true];
 if (!isset($whitelist[$column])) {
-$column = 'date';
+	$column = 'accomplished_on';
 }
 
 $prepared = $mysql->prepare("SELECT * FROM neko_punch ORDER BY $column DESC;");
 
 $prepared->execute();
 $results = $prepared->get_result();
-        
-foreach ($results as $row) {
-?>
-        
-<!--------
-<div>
-    <?=htmlentities($row["activity"]) ?>
-        
-        test test test
-        
-    <?=htmlentities($row["calories"]) ?>
-</div>
---------->    
-    
-<?php
-}
 
 $sumQuery = $mysql->prepare('SELECT SUM(calories) AS sum FROM neko_punch;');
 $sumQuery->execute();
@@ -82,12 +66,14 @@ $max = $maxResult->fetch_array();
   </tr>    
     
     </div>
-    
+
+<?php foreach ($results as $row) { ?>
   <tr>
-    <td><?= htmlentities ($row["date"]) ?>
+    <td><?= htmlentities ($row["accomplished_on"]) ?>
     <td><?= htmlentities ($row["activity"]) ?>
     <td><?= htmlentities ($row["calories"]) ?>
-        
+<?php } ?>
+
 </table>
         
         <div>________________________________________________________</div>
