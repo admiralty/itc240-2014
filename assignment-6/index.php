@@ -81,6 +81,8 @@ $max = $maxResult->fetch_array();
         <br><div><b>Most calories burned in one activity -- </b><?= $max["calories"] ?></div>
         
     </body>
+	
+	<!-- test -->
 
 </html>
 
