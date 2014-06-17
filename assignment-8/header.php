@@ -29,14 +29,15 @@ $reviewed = $parksReviewed->fetch_array();
     <input placeholder="Rating" name="Rating">
     <input placeholder="Review" name="Review">
     <input type="submit" value="Submit Park">
+    
 </form>
         
        <!-- <div>____________________________________</div> -->
             
             
                 <br>
-                <a href="?sort=ratings">Highest Rated</a> | 
-                <a href="?sort=alphabetical">Alphabetical</a>
+                <a href="?sort=Ratings">Highest Rated</a> | 
+                <a href="?sort=Name">Alphabetical</a>
             
 <?php
 
