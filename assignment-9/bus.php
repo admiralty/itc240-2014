@@ -58,8 +58,8 @@ if ($bus->armed == true) {
 	echo "Getting dangerously slow<br>";
 }
 
-$bus->setSpeed(51);
-if ($bus->armed == true) {
+$bus->setSpeed(30);
+if ($bus->exploded == true) {
 	echo "Lost too much speed - Movie over.<br>";
 }
 /*
